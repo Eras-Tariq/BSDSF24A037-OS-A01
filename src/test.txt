@@ -1,0 +1,3 @@
+Linux is an operating system.
+Linux is used for programming.
+Operating systems manage computer resources.
