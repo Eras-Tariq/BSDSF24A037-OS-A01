@@ -27,7 +27,7 @@ int main()
 
     printf("\n--- Testing File Functions ---\n");
 
-    FILE* file = fopen("test.txt", "r");
+    FILE* file = fopen("src/test.txt", "r");
 
     if (file == NULL)
     {
@@ -47,7 +47,7 @@ int main()
     fclose(file);
 
 
-    file = fopen("test.txt", "r");
+    file = fopen("src/test.txt", "r");
 
     if (file == NULL)
     {
