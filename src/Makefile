@@ -60,3 +60,10 @@ run: $(DYNAMIC_TARGET)
 
 clean:
 	rm -f $(STATIC_TARGET) $(DYNAMIC_TARGET) $(MAIN) $(LIB_OBJS) $(PIC_OBJS) $(STATIC_LIB) $(DYNAMIC_LIB)
+install: $(DYNAMIC_TARGET) $(DYNAMIC_LIB)
+	mkdir -p /usr/local/bin
+	mkdir -p /usr/local/lib
+	mkdir -p /usr/local/share/man/man1
+	cp $(DYNAMIC_TARGET) /usr/local/bin/client
+	cp $(DYNAMIC_LIB) /usr/local/lib/
+	cp ../man/man3/*.1 /usr/local/share/man/man1/
